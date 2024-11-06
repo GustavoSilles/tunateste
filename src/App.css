@@ -122,7 +122,7 @@ justify-content: center;
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1366px) and (min-width: 1280px) {
+@media  (max-width: 1366px) and (min-width: 1270px) {
   
     .regions-container {
       flex-wrap:nowrap;
