@@ -50,7 +50,7 @@ function App() {
 
     // Chama a função para buscar os dados
     fetchEstados();
-  });
+  }, []);
 
   return (
     <div className="container">
