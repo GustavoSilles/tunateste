@@ -24,12 +24,12 @@ body {
   padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .navbar {
-  height: 120px;
+  height: 115px;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -122,11 +122,14 @@ justify-content: center;
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1510px) and (min-width: 1250px) {
+@media (max-width: 1600px) and (min-width: 1250px) {
   
     .regions-container {
       flex-wrap:nowrap;
     }
+    .position-cards{
+      min-height: 64vh;
+      }
 
 }
 
