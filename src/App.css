@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  color-scheme: light;
+  padding: 0;
+  text-decoration: none;
+  font-family: M PLUS Rounded\ 1c, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 1.2rem;
+  content: "";
+  background: url("../src/img/tuna.svg") no-repeat center center/cover;
+  height: 84px;
+  width: 175px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.regions-container {
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.border {
+  border: 1px solid rgb(238 238 238);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.region-card {
+  text-align: center;
+  background-color: #ffff;
+  border: 1px solid rgb(238 238 238);
+  border-radius: 20px;
+  padding: 40px;
+  height: 385px;
+  width: 270px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.region-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.region-card h2 {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(0 0 0);
+}
+
+.region-card ul {
+  list-style-type: none;
+}
+
+.region-card li {
+  font-size: 16px;
+  color:  rgb(153 153 153);
+}
+
+.barra {
+  border-radius: 9999px;
+  background-color: rgb(49 179 78);
+  width: 35rem;
+  height: .75rem;
+  margin-top: .5rem;
+}
+
+.position-cards{
+width: 100%;
+min-height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1510px) and (min-width: 1250px) {
+  
+    .regions-container {
+      flex-wrap:nowrap;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+  .regions-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .region-card {
+    width: 100%;
+  }
+
+  .logo {
+    position: relative;
+    left: 0;
+
+  }
+
+  .barra {
+    width: 20rem;
+  }
+  .title {
+   
+    margin-bottom: 25px;
+  }
+
+
+}
