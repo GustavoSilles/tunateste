@@ -38,7 +38,7 @@ body {
 
 .logo {
   position: absolute;
-  left: 1.2rem;
+  left:0;
   content: "";
   background: url("../src/img/tuna.svg") no-repeat center center/cover;
   height: 84px;
@@ -122,15 +122,32 @@ justify-content: center;
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1600px) and (min-width: 1250px) {
+@media (max-width: 1366px) and (min-width: 1280px) {
   
     .regions-container {
       flex-wrap:nowrap;
+      gap: 15px;
     }
     .position-cards{
       min-height: 64vh;
       }
+      .title {
+        margin-top: -60px;
+    }
+    .container {
+      padding: 0px 15px 15px 15px; 
+    }
 
+}
+
+@media (max-width: 1600px) and (min-width: 1366px) {
+  
+  .regions-container {
+    flex-wrap:nowrap;
+  }
+  .position-cards{
+    min-height: 64vh;
+    }
 }
 
 
@@ -152,8 +169,6 @@ justify-content: center;
 
   .logo {
     position: relative;
-    left: 0;
-
   }
 
   .barra {
