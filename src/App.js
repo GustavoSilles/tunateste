@@ -53,7 +53,7 @@ function App() {
   });
 
   return (
-    <div className="conatiner">
+    <div className="container">
       <nav className='navbar'>
         <div className='logo'></div>
       </nav>
